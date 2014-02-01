@@ -1,120 +1,280 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Sookoll">
+		<meta name="description" content="Sookolli veebileht" />
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="ROBOTS" content="INDEX,FOLLOW">
+		<title>Sookolli Kaardid</title>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Sookolli Kaardid</title>
+		<!-- Bootstrap core CSS -->
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://github.com/themes/minimal/stylesheets/styles.css">
-    <style>
-        header { zoom: 1.2; }
-          header h1 { margin-bottom: 5px; }
-          header h1 a { color: #494949; font-weight: bold; }
-          header h3 { margin-top: 20px; margin-bottom: 5px; }
-          header p.view { margin-bottom: 5px; }
-          header p.view small { padding-top: 2px; }
-          header ul {
-            zoom: 0.7;
-            margin-top: 25px;
-          }
-          section p { margin-top: 10px; }
-          section h1 { margin-bottom: 15px; }
-          section h2 { margin-bottom: 10px; }
-          section h2 { margin-bottom: 10px; }
-          footer { bottom: 20px; }
-          footer p { margin-bottom: 5px; }
-          .half-width {
-            float: left;
-            width: 200px;
-            list-style: none;
-            padding: 5px;
-            margin: 7px;
-            margin-bottom: 10px;
-          }
-          .half-width h4 {
-            margin-bottom: 5px;
-          }
-          .half-width ul {
-            padding-left: 0;
-          }
-          .half-width ul li {
-            list-style: inside;
-            font-size: 15px;
-          }
-          .clear-fix {
-            clear: both;
-          }
-    </style>
-    <script src="https://github.com/themes/minimal/javascripts/scale.fix.js"></script>
-</head>
+		<style>
+			@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 
-<body>
-    <div class="wrapper">
-        <header>
-            <h1>
-                <a href="/">Sookolli Kaardid</a>
-            </h1>
-            <small>Don't follow me, I'm a geographer!</small>
-            <h3>Asju</h3>
-            <p class="view">
-                <a href="http://sookoll.ee/geopusle" target="tab">Geopusle
-                    <small>Geograafiline mäng</small>
-                </a>
-            </p>
-            <p class="view">
-                <a href="http://hub.sookoll.ee/estgis2013" target="tab">GIS tulevik on JS
-                    <small>Ettekanne ESTGIS 2013 konverentsil</small>
-                </a>
-            </p>
+			body {
+				font: 18px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+				color: #777;
+				font-weight: 300;
+			}
 
-            <h3>Minu käsi on mängus</h3>
-            <p class="view">
-                <a href="http://www.eoy.ee/nurmkana" target="tab">Eesti Aasta lind 2013
-                    <small>Vaatluste sisestamiste rakendus</small>
-                </a>
-            </p>
-            <p class="view">
-                <a href="http://www.eoy.ee/talv" target="tab">Talvine aialinnuvaatlus 2013
-                    <small>Veebilehe lahendus ja vaatluste rakendus</small>
-                </a>
-            </p>
-            <p class="view">
-                <a href="http://www.eoy.ee/paasuke" target="tab">Pääsupesade loendus 2013
-                    <small>Vaatluste sisestamise rakendus</small>
-                </a>
-            </p>
+			h1, h2, h3, h4, h5, h6 {
+				color: #222;
+			}
 
-            <h3>Võta ühendust</h3>
-            <p class="view">mihkel [at] sookoll.ee</p>
-            <p class="view">
-                <a href="https://twitter.com/sookoll" target="tab">Twitter
-                    <small>kui säutsud</small>
-                </a>
-            </p>
-            <p class="view">
-                <a href="https://github.com/sookoll" target="tab">GitHub
-                    <small>kui kribad koodi</small>
-                </a>
-            </p>
+			h1, h2, h3 {
+				line-height: 1.2;
+			}
 
-        </header>
-        <section id="main">
-            <img src="sookoll_kaardil.png">
-        </section>
-        <footer>
-            <p>
-                <small>
-                    <a href="http://sookoll.ee">Sookolli Kaardid 2013</a>
-                </small>
-            </p>
-        </footer>
-    </div>
+			h1 {
+				font-size: 30px;
+			}
 
+			h2 {
+				color: #393939;
+			}
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
-</body>
+			h3, h4, h5, h6 {
+				color: #494949;
+			}
 
+			a {
+				color: #39c;
+				font-weight: 400;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				text-decoration: none;
+			}
+
+			a small {
+				font-size: 11px;
+				color: #777;
+				margin-top: -0.6em;
+				display: block;
+			}
+			
+			.clear {
+				clear: both;
+			}
+
+			header h1 a { 
+				color: #494949; 
+				font-weight: bold; 
+			}
+			
+			header .container {
+				border-bottom: 1px dotted #ccc
+			}
+			
+			.navbar h3 {
+				font-weight: bold; 
+			}
+			
+			header, .navbar, footer {
+
+			}
+
+			button.btn.navbar-toggle {
+				color: #333;
+				background-color: transparent;
+				border-color: transparent;
+				position: absolute;
+				top: 10px;
+				right: 0px
+			}
+			.navbar-toggle .icon-bar {
+				background-color: #494949;
+			}
+			
+			button.btn.navbar-toggle:hover {
+				background-color: #eee
+			}
+
+			.navbar, .navbar ul {
+				list-style-type: none;
+			}
+
+			.navbar {
+				max-height: none
+			}
+			
+			.content img {
+				opacity:.2
+			}
+			
+			footer .container {
+				border-top: 1px dotted #ccc
+			}
+
+			@media (min-width: 768px) {
+
+				header, .navbar, footer {
+					text-align: right;
+				}
+
+				section .navbar {
+					background: none;
+					border: none;
+					padding-right: 0px;
+				}
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<div class="col-sm-4 col-xs-8">
+					<h1><a href="//sookoll.ee">SOOKOLLI KAARDID</a></h1>
+					Don't follow me, I'm a geographer!
+				</div>
+				<div class="col-sm-8 col-xs-4">
+					<button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="clear" style="height: 30px"></div>
+			</div>
+		</header>
+		<section>
+			<div class="container">
+				<div class="clear" style="height: 20px"></div>
+				<div class="col-sm-4">
+					<ul class="navbar navbar-default navbar-collapse collapse" role="navigation">
+						<li>
+							<h3>Asju:</h3>
+							<ul>
+								<li>
+									<a href="//sookoll.ee/geopusle" target="tab">Geopusle
+									<br>
+									<small>Geograafiline mäng</small></a>
+								</li>
+								<li>
+									<a href="//hub.sookoll.ee/estgis2013" target="tab">GIS tulevik on JS
+									<br>
+									<small>Ettekanne ESTGIS 2013 konverentsil</small> </a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Teen ja kasutan:</h3>
+							<ul>
+								<li>
+									<a href="#" target="tab">Veebiarendus
+									<br>
+									<small>HTML5, CSS3, JS, PHP</small></a>
+								</li>
+								<li>
+									<a href="http://ol3js.org" target="tab">OpenLayers
+									<br>
+									<small>Veebikaardi raamistik</small> </a>
+								</li>
+								<li>
+									<a href="http://leafletjs.com/" target="tab">Leaflet
+									<br>
+									<small>Veebikaardi raamistik</small> </a>
+								</li>
+								<li>
+									<a href="http://d3js.org/" target="tab">D3.js
+									<br>
+									<small>Andmete manipuleerimine veebis</small> </a>
+								</li>
+								<li>
+									<a href="http://gdal.org" target="tab">GDAL/OGR
+									<br>
+									<small>Geoandmete töötlemine</small></a>
+								</li>
+								<li>
+									<a href="http://postgis.org" target="tab">PostGIS
+									<br>
+									<small>Geoandmete haldamine</small></a>
+								</li>
+								<li>
+									<a href="http://mapserver.org" target="tab">MapServer
+									<br>
+									<small>Kaartide ja andmete serveerimine</small></a>
+								</li>
+								<li>
+									<a href="http://geoserver.org" target="tab">GeoServer
+									<br>
+									<small>Kaartide ja andmete serveerimine</small></a>
+								</li>
+								
+							</ul>
+						</li>
+						<li>
+							<h3>Minu käsi on mängus:</h3>
+							<ul>
+								<li>
+									<a href="http://www.eoy.ee/jaalind" target="tab">Eesti Aasta lind 2014
+									<br>
+									<small>Vaatluste sisestamiste rakendus</small> </a>
+								</li>
+								<li>
+									<a href="http://www.eoy.ee/talv" target="tab">Talvine aialinnuvaatlus 2013, 2014
+									<br>
+									<small>Veebilehe lahendus ja vaatluste rakendus</small> </a>
+								</li>
+								<li>
+									<a href="http://www.eoy.ee/paasuke" target="tab">Pääsupesade loendus 2013
+									<br>
+									<small>Vaatluste sisestamise rakendus</small> </a>
+								</li>
+								<li>
+									<a href="http://www.eoy.ee/nurmkana" target="tab">Eesti Aasta lind 2013
+									<br>
+									<small>Vaatluste sisestamiste rakendus</small> </a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<h3>Võta ühendust:</h3>
+							<ul>
+								<li>
+									mihkel [at] sookoll.ee
+								</li>
+								<li>
+									<a href="https://twitter.com/sookoll" target="tab">Twitter
+									<br>
+									<small>kui säutsud</small> </a>
+								</li>
+								<li>
+									<a href="https://github.com/sookoll" target="tab">GitHub
+									<br>
+									<small>kui kribad koodi</small> </a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-8 content">
+					<img src="sookoll_kaardil.png" class="img-responsive">
+				</div>
+				<div class="clear" style="height: 20px"></div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="clear" style="height: 30px"></div>
+				<div class="col-sm-4">
+					<small><a href="http://sookoll.ee">Sookolli Kaardid 2014</a></small>
+				</div>
+				<div class="clear" style="height: 50px"></div>
+			</div>
+		</footer>
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+	</body>
 </html>
