@@ -4,6 +4,20 @@
 	
 	// generate navbar (to all pages and servers (blog, hub, www))
 	var html = '<li>\
+					<ul>\
+						<li>\
+							<a href="//sookoll.ee" target="tab">Avaleht\
+							<br>\
+							<small>sookoll.ee</small></a>\
+						</li>\
+						<li>\
+							<a href="//blog.sookoll.ee" target="tab">Blog\
+							<br>\
+							<small>blog.sookoll.ee</small> </a>\
+						</li>\
+					</ul>\
+				</li>\
+				<li>\
 					<h3>Asju:</h3>\
 					<ul>\
 						<li>\
