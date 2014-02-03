@@ -6,12 +6,12 @@
 	var html = '<li>\
 					<ul>\
 						<li>\
-							<a href="//sookoll.ee" target="tab">Avaleht\
+							<a href="//sookoll.ee">Avaleht\
 							<br>\
 							<small>sookoll.ee</small></a>\
 						</li>\
 						<li>\
-							<a href="//blog.sookoll.ee" target="tab">Blog\
+							<a href="//blog.sookoll.ee">Blog\
 							<br>\
 							<small>blog.sookoll.ee</small> </a>\
 						</li>\
@@ -21,12 +21,12 @@
 					<h3>Asju:</h3>\
 					<ul>\
 						<li>\
-							<a href="//sookoll.ee/geopusle" target="tab">Geopusle\
+							<a href="//sookoll.ee/geopusle" target="_blank">Geopusle\
 							<br>\
 							<small>Geograafiline mäng</small></a>\
 						</li>\
 						<li>\
-							<a href="//hub.sookoll.ee/estgis2013" target="tab">GIS tulevik on JS\
+							<a href="//hub.sookoll.ee/estgis2013" target="_blank">GIS tulevik on JS\
 							<br>\
 							<small>Ettekanne ESTGIS 2013 konverentsil</small> </a>\
 						</li>\
@@ -36,42 +36,42 @@
 					<h3>Teen ja kasutan:</h3>\
 					<ul>\
 						<li>\
-							<a href="#" target="tab">Veebiarendus\
+							<a href="#" target="_blank">Veebiarendus\
 							<br>\
 							<small>HTML5, CSS3, JS, PHP</small></a>\
 						</li>\
 						<li>\
-							<a href="http://ol3js.org" target="tab">OpenLayers\
+							<a href="http://ol3js.org" target="_blank">OpenLayers\
 							<br>\
 							<small>Veebikaardi raamistik</small> </a>\
 						</li>\
 						<li>\
-							<a href="http://leafletjs.com/" target="tab">Leaflet\
+							<a href="http://leafletjs.com/" target="_blank">Leaflet\
 							<br>\
 							<small>Veebikaardi raamistik</small> </a>\
 						</li>\
 						<li>\
-							<a href="http://d3js.org/" target="tab">D3.js\
+							<a href="http://d3js.org/" target="_blank">D3.js\
 							<br>\
 							<small>Andmete manipuleerimine veebis</small> </a>\
 						</li>\
 						<li>\
-							<a href="http://gdal.org" target="tab">GDAL/OGR\
+							<a href="http://gdal.org" target="_blank">GDAL/OGR\
 							<br>\
 							<small>Geoandmete töötlemine</small></a>\
 						</li>\
 						<li>\
-							<a href="http://postgis.org" target="tab">PostGIS\
+							<a href="http://postgis.org" target="_blank">PostGIS\
 							<br>\
 							<small>Geoandmete haldamine</small></a>\
 						</li>\
 						<li>\
-							<a href="http://mapserver.org" target="tab">MapServer\
+							<a href="http://mapserver.org" target="_blank">MapServer\
 							<br>\
 							<small>Kaartide ja andmete serveerimine</small></a>\
 						</li>\
 						<li>\
-							<a href="http://geoserver.org" target="tab">GeoServer\
+							<a href="http://geoserver.org" target="_blank">GeoServer\
 							<br>\
 							<small>Kaartide ja andmete serveerimine</small></a>\
 						</li>\
@@ -82,22 +82,22 @@
 					<h3>Minu käsi on mängus:</h3>\
 					<ul>\
 						<li>\
-							<a href="http://www.eoy.ee/jaalind" target="tab">Eesti Aasta lind 2014\
+							<a href="http://www.eoy.ee/jaalind" target="_blank">Eesti Aasta lind 2014\
 							<br>\
 							<small>Vaatluste sisestamiste rakendus</small> </a>\
 						</li>\
 						<li>\
-							<a href="http://www.eoy.ee/talv" target="tab">Talvine aialinnuvaatlus 2013, 2014\
+							<a href="http://www.eoy.ee/talv" target="_blank">Talvine aialinnuvaatlus 2013, 2014\
 							<br>\
 							<small>Veebilehe lahendus ja vaatluste rakendus</small> </a>\
 						</li>\
 						<li>\
-							<a href="http://www.eoy.ee/paasuke" target="tab">Pääsupesade loendus 2013\
+							<a href="http://www.eoy.ee/paasuke" target="_blank">Pääsupesade loendus 2013\
 							<br>\
 							<small>Vaatluste sisestamise rakendus</small> </a>\
 						</li>\
 						<li>\
-							<a href="http://www.eoy.ee/nurmkana" target="tab">Eesti Aasta lind 2013\
+							<a href="http://www.eoy.ee/nurmkana" target="_blank">Eesti Aasta lind 2013\
 							<br>\
 							<small>Vaatluste sisestamiste rakendus</small> </a>\
 						</li>\
@@ -110,12 +110,12 @@
 							mihkel [at] sookoll.ee\
 						</li>\
 						<li>\
-							<a href="https://twitter.com/sookoll" target="tab">Twitter\
+							<a href="https://twitter.com/sookoll" target="_blank">Twitter\
 							<br>\
 							<small>kui säutsud</small> </a>\
 						</li>\
 						<li>\
-							<a href="https://github.com/sookoll" target="tab">GitHub\
+							<a href="https://github.com/sookoll" target="_blank">GitHub\
 							<br>\
 							<small>kui kribad koodi</small> </a>\
 						</li>\
@@ -136,5 +136,30 @@
 			$(this).attr('target','_blank');
 		}
 	});
+	
+	function formatDate(date, fmt) {
+		function pad(value) {
+			return (value.toString().length < 2) ? '0' + value : value;
+		}
+
+		return fmt.replace(/%([a-zA-Z])/g, function(_, fmtCode) {
+			switch (fmtCode) {
+				case 'Y':
+					return date.getUTCFullYear();
+				case 'M':
+					return pad(date.getUTCMonth() + 1);
+				case 'd':
+					return pad(date.getUTCDate());
+				case 'H':
+					return pad(date.getUTCHours());
+				case 'm':
+					return pad(date.getUTCMinutes());
+				case 's':
+					return pad(date.getUTCSeconds());
+				default:
+					throw new Error('Unsupported format code: ' + fmtCode);
+			}
+		});
+	}
 
 }( window, jQuery ));
