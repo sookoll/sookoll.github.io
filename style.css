@@ -100,23 +100,6 @@ button.btn.navbar-toggle:hover {
 	font-weight: bold;
 }
 
-.tags {
-	list-style-type: none;
-	padding: 0
-}
-.tags li {
-	display: inline;
-	margin-left: 3px;
-	background:#aaa;
-	border-radius: 3px;
-	padding: 0px 10px 3px;
-}
-
-.tags li a {
-	color: #fff;
-	font-size: 14px;
-}
-
 .content h1 {
 	font-size: 36px;
 	font-weight: bold
