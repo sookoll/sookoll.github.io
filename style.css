@@ -96,6 +96,9 @@ button.btn.navbar-toggle:hover {
 .navbar li {
 	margin-bottom:3px
 }
+.navbar a.active {
+	font-weight: bold;
+}
 
 .tags {
 	list-style-type: none;
@@ -120,7 +123,9 @@ button.btn.navbar-toggle:hover {
 }
 
 .content img.logo {
-	opacity: .2
+	opacity: .2;
+	display:block;
+	margin 30px auto;
 }
 
 footer .container {

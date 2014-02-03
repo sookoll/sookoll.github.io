@@ -124,6 +124,11 @@
 	
 	// add html to navbar
 	$('.navbar').html(html);
+	$('.navbar a').each(function(){
+		if($(this).attr('href') === window.location.hostname){
+			$(this).addClass('active');
+		}
+	});
 	
 	$('.content img').addClass('img-responsive');
 	$('.content a').each(function(){
