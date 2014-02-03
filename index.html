@@ -12,120 +12,8 @@
 
 		<!-- Bootstrap core CSS -->
 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
-
-		<style>
-			@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-
-			body {
-				font: 18px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-				color: #777;
-				font-weight: 300;
-			}
-
-			h1, h2, h3, h4, h5, h6 {
-				color: #222;
-			}
-
-			h1, h2, h3 {
-				line-height: 1.2;
-			}
-
-			h1 {
-				font-size: 30px;
-			}
-
-			h2 {
-				color: #393939;
-			}
-
-			h3, h4, h5, h6 {
-				color: #494949;
-			}
-
-			a {
-				color: #39c;
-				font-weight: 400;
-				text-decoration: none;
-			}
-			
-			a:hover {
-				text-decoration: none;
-			}
-
-			a small {
-				font-size: 11px;
-				color: #777;
-				margin-top: -0.6em;
-				display: block;
-			}
-			
-			.clear {
-				clear: both;
-			}
-
-			header h1 a { 
-				color: #494949; 
-				font-weight: bold; 
-			}
-			
-			header .container {
-				border-bottom: 1px dotted #ccc
-			}
-			
-			.navbar h3 {
-				font-weight: bold; 
-			}
-			
-			header, .navbar, footer {
-
-			}
-
-			button.btn.navbar-toggle {
-				color: #333;
-				background-color: transparent;
-				border-color: transparent;
-				position: absolute;
-				top: 10px;
-				right: 0px
-			}
-			.navbar-toggle .icon-bar {
-				background-color: #494949;
-			}
-			
-			button.btn.navbar-toggle:hover {
-				background-color: #eee
-			}
-
-			.navbar, .navbar ul {
-				list-style-type: none;
-			}
-
-			.navbar {
-				max-height: none
-			}
-			
-			.content img {
-				opacity:.2
-			}
-			
-			footer .container {
-				border-top: 1px dotted #ccc
-			}
-
-			@media (min-width: 768px) {
-
-				header, .navbar, footer {
-					text-align: right;
-				}
-
-				section .navbar {
-					background: none;
-					border: none;
-					padding-right: 0px;
-				}
-			}
-		</style>
-
+		<!-- Theme -->
+		<link href="//hub.sookoll.ee/style.css" rel="stylesheet">
 	</head>
 
 	<body>
@@ -149,115 +37,12 @@
 			<div class="container">
 				<div class="clear" style="height: 20px"></div>
 				<div class="col-sm-4">
-					<ul class="navbar navbar-default navbar-collapse collapse" role="navigation">
-						<li>
-							<h3>Asju:</h3>
-							<ul>
-								<li>
-									<a href="//sookoll.ee/geopusle" target="tab">Geopusle
-									<br>
-									<small>Geograafiline mäng</small></a>
-								</li>
-								<li>
-									<a href="//hub.sookoll.ee/estgis2013" target="tab">GIS tulevik on JS
-									<br>
-									<small>Ettekanne ESTGIS 2013 konverentsil</small> </a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<h3>Teen ja kasutan:</h3>
-							<ul>
-								<li>
-									<a href="#" target="tab">Veebiarendus
-									<br>
-									<small>HTML5, CSS3, JS, PHP</small></a>
-								</li>
-								<li>
-									<a href="http://ol3js.org" target="tab">OpenLayers
-									<br>
-									<small>Veebikaardi raamistik</small> </a>
-								</li>
-								<li>
-									<a href="http://leafletjs.com/" target="tab">Leaflet
-									<br>
-									<small>Veebikaardi raamistik</small> </a>
-								</li>
-								<li>
-									<a href="http://d3js.org/" target="tab">D3.js
-									<br>
-									<small>Andmete manipuleerimine veebis</small> </a>
-								</li>
-								<li>
-									<a href="http://gdal.org" target="tab">GDAL/OGR
-									<br>
-									<small>Geoandmete töötlemine</small></a>
-								</li>
-								<li>
-									<a href="http://postgis.org" target="tab">PostGIS
-									<br>
-									<small>Geoandmete haldamine</small></a>
-								</li>
-								<li>
-									<a href="http://mapserver.org" target="tab">MapServer
-									<br>
-									<small>Kaartide ja andmete serveerimine</small></a>
-								</li>
-								<li>
-									<a href="http://geoserver.org" target="tab">GeoServer
-									<br>
-									<small>Kaartide ja andmete serveerimine</small></a>
-								</li>
-								
-							</ul>
-						</li>
-						<li>
-							<h3>Minu käsi on mängus:</h3>
-							<ul>
-								<li>
-									<a href="http://www.eoy.ee/jaalind" target="tab">Eesti Aasta lind 2014
-									<br>
-									<small>Vaatluste sisestamiste rakendus</small> </a>
-								</li>
-								<li>
-									<a href="http://www.eoy.ee/talv" target="tab">Talvine aialinnuvaatlus 2013, 2014
-									<br>
-									<small>Veebilehe lahendus ja vaatluste rakendus</small> </a>
-								</li>
-								<li>
-									<a href="http://www.eoy.ee/paasuke" target="tab">Pääsupesade loendus 2013
-									<br>
-									<small>Vaatluste sisestamise rakendus</small> </a>
-								</li>
-								<li>
-									<a href="http://www.eoy.ee/nurmkana" target="tab">Eesti Aasta lind 2013
-									<br>
-									<small>Vaatluste sisestamiste rakendus</small> </a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<h3>Võta ühendust:</h3>
-							<ul>
-								<li>
-									mihkel [at] sookoll.ee
-								</li>
-								<li>
-									<a href="https://twitter.com/sookoll" target="tab">Twitter
-									<br>
-									<small>kui säutsud</small> </a>
-								</li>
-								<li>
-									<a href="https://github.com/sookoll" target="tab">GitHub
-									<br>
-									<small>kui kribad koodi</small> </a>
-								</li>
-							</ul>
-						</li>
-					</ul>
+					<!-- Navbar -->
+					<ul class="navbar navbar-default navbar-collapse collapse" role="navigation"></ul>
 				</div>
 				<div class="col-sm-8 content">
-					<img src="sookoll_kaardil.png" class="img-responsive">
+					<!-- Content -->
+					<img src="//hub.sookoll.ee/sookoll_kaardil.png">
 				</div>
 				<div class="clear" style="height: 20px"></div>
 			</div>
@@ -272,9 +57,9 @@
 			</div>
 		</footer>
 
-		<!-- Bootstrap core JavaScript -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+		<script src="//hub.sookoll.ee/main.js"></script>
 
 	</body>
 </html>
