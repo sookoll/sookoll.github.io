@@ -152,6 +152,22 @@
 		e.preventDefault();
 		$('html, body').animate({scrollTop: 0}, duration);
 	});
+	
+	// Cache the Window object
+	$window = $(window);
+
+	var $bgobj = $('body'); // assigning the object
+	$(window).scroll(function() {
+		// Scroll the background at var speed
+		// the yPos is a negative value because we're scrolling it UP!								
+		var yPos = -($window.scrollTop() / 6); 
+		
+		// Put together our final background position
+		var coords = '50% '+ yPos + 'px';
+
+		// Move the background
+		$bgobj.css({ backgroundPosition: coords });
+	}); // window scroll Ends	
 
 }( window, jQuery ));
 
