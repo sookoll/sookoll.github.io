@@ -6,17 +6,17 @@
 	var html = '<li>\
 					<ul>\
 						<li>\
-							<a href="//sookoll.ee">Avaleht\
+							<a href="http://sookoll.ee">Avaleht\
 							<br>\
 							<small>sookoll.ee</small></a>\
 						</li>\
 						<li>\
-							<a href="//blog.sookoll.ee/tags/portfolio">Projektid\
+							<a href="http://blog.sookoll.ee/tags/portfolio">Projektid\
 							<br>\
 							<small>Minu käsi on mängus</small></a>\
 						</li>\
 						<li>\
-							<a href="//blog.sookoll.ee">Blog\
+							<a href="http://blog.sookoll.ee">Blog\
 							<br>\
 							<small>blog.sookoll.ee</small> </a>\
 						</li>\
