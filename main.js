@@ -105,7 +105,7 @@
 	// add html to navbar
 	$('.navbar').html(html);
 	$('.navbar a').each(function(){
-		if($(this).attr('href') === window.location.href){
+		if($(this).attr('href').replace(/\/$/,'') === window.location.href.replace(/\/$/,'')){
 			$(this).addClass('active');
 		}
 	});
