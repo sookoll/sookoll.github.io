@@ -154,7 +154,7 @@
 	});
 	
 	// Cache the Window object
-	$window = $(window);
+	var $window = $(window);
 
 	var $bgobj = $('body'); // assigning the object
 	$(window).scroll(function() {
