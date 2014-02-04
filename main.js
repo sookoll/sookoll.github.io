@@ -153,6 +153,13 @@
 		$('html, body').animate({scrollTop: 0}, duration);
 	});
 	
+	// parallax
+	$('body').mousemove(function(e){
+		var amountMovedX = (e.pageX * -1 / 6);
+		var amountMovedY = (e.pageY * -1 / 6);
+		$(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+	});
+	
 	// Cache the Window object
 	var $window = $(window);
 
