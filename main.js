@@ -155,16 +155,16 @@
 	
 	var scroll = false;
 	// parallax
-	$('body').mousemove(function(e){
+	/*$('body').mousemove(function(e){
 		if(scroll === false){
 			var amountMovedX = (e.pageX * -1 / 6);
 			var amountMovedY = (e.pageY * -1 / 6);
 			$(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
 		}
-	});
+	});*/
 	
 	// Cache the Window object
-	/*var $window = $(window);
+	var $window = $(window);
 
 	var $bgobj = $('body'); // assigning the object
 	$(window).scroll(function() {
@@ -180,7 +180,7 @@
 		$bgobj.css({ backgroundPosition: coords });
 		scroll = false;
 	}); // window scroll Ends	
-*/
+
 }( window, jQuery ));
 
 function formatDate(date, fmt) {
