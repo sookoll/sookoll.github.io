@@ -153,11 +153,14 @@
 		$('html, body').animate({scrollTop: 0}, duration);
 	});
 	
+	var scroll = false;
 	// parallax
 	$('body').mousemove(function(e){
-		var amountMovedX = (e.pageX * -1 / 6);
-		var amountMovedY = (e.pageY * -1 / 6);
-		$(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+		if(scroll === false){
+			var amountMovedX = (e.pageX * -1 / 6);
+			var amountMovedY = (e.pageY * -1 / 6);
+			$(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+		}
 	});
 	
 	// Cache the Window object
@@ -165,6 +168,7 @@
 
 	var $bgobj = $('body'); // assigning the object
 	$(window).scroll(function() {
+		scroll = true;
 		// Scroll the background at var speed
 		// the yPos is a negative value because we're scrolling it UP!								
 		var yPos = -($window.scrollTop() / 6); 
@@ -174,6 +178,7 @@
 
 		// Move the background
 		$bgobj.css({ backgroundPosition: coords });
+		scroll = false;
 	}); // window scroll Ends	
 
 }( window, jQuery ));
