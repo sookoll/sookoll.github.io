@@ -11,6 +11,11 @@
 							<small>sookoll.ee</small></a>\
 						</li>\
 						<li>\
+							<a href="//blog.sookoll.ee/tags/portfolio">Projektid\
+							<br>\
+							<small>Minu käsi on mängus</small></a>\
+						</li>\
+						<li>\
 							<a href="//blog.sookoll.ee">Blog\
 							<br>\
 							<small>blog.sookoll.ee</small> </a>\
@@ -79,31 +84,6 @@
 					</ul>\
 				</li>\
 				<li>\
-					<h3>Minu käsi on mängus:</h3>\
-					<ul>\
-						<li>\
-							<a href="http://www.eoy.ee/jaalind" target="_blank">Eesti Aasta lind 2014\
-							<br>\
-							<small>Vaatluste sisestamiste rakendus</small> </a>\
-						</li>\
-						<li>\
-							<a href="http://www.eoy.ee/talv" target="_blank">Talvine aialinnuvaatlus 2013, 2014\
-							<br>\
-							<small>Veebilehe lahendus ja vaatluste rakendus</small> </a>\
-						</li>\
-						<li>\
-							<a href="http://www.eoy.ee/paasuke" target="_blank">Pääsupesade loendus 2013\
-							<br>\
-							<small>Vaatluste sisestamise rakendus</small> </a>\
-						</li>\
-						<li>\
-							<a href="http://www.eoy.ee/nurmkana" target="_blank">Eesti Aasta lind 2013\
-							<br>\
-							<small>Vaatluste sisestamiste rakendus</small> </a>\
-						</li>\
-					</ul>\
-				</li>\
-				<li>\
 					<h3>Võta ühendust:</h3>\
 					<ul>\
 						<li>\
@@ -125,7 +105,7 @@
 	// add html to navbar
 	$('.navbar').html(html);
 	$('.navbar a').each(function(){
-		if($(this).attr('href') === '//'+window.location.hostname){
+		if($(this).attr('href') === '//'+window.location.href){
 			$(this).addClass('active');
 		}
 	});
