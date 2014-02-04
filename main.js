@@ -164,7 +164,7 @@
 	});
 	
 	// Cache the Window object
-	var $window = $(window);
+	/*var $window = $(window);
 
 	var $bgobj = $('body'); // assigning the object
 	$(window).scroll(function() {
@@ -180,7 +180,7 @@
 		$bgobj.css({ backgroundPosition: coords });
 		scroll = false;
 	}); // window scroll Ends	
-
+*/
 }( window, jQuery ));
 
 function formatDate(date, fmt) {
