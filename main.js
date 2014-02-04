@@ -11,7 +11,7 @@
 							<small>sookoll.ee</small></a>\
 						</li>\
 						<li>\
-							<a href="http://blog.sookoll.ee/tags/portfolio">Projektid\
+							<a href="http://blog.sookoll.ee/tag/portfolio">Projektid\
 							<br>\
 							<small>Minu käsi on mängus</small></a>\
 						</li>\
