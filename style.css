@@ -84,7 +84,8 @@ section, footer {
 section .cit {
 	padding: 20px 0;
 	text-align:center;
-	background: #999
+	background: #999;
+	box-shadow: 0 0 12px #999;
 }
 
 section .cit span {
