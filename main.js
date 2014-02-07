@@ -144,8 +144,8 @@
 	var scroll = false;
 	// parallax
 	$('img.logo').mousemove(function(e){
-		var amountMovedX = (e.pageX * -1 / 6);
-		var amountMovedY = (e.pageY * -1 / 6);
+		var amountMovedX = (e.pageX * -1 / 10);
+		var amountMovedY = (e.pageY * -1 / 10);
 		$(this).css({'top':amountMovedY + 'px','left':amountMovedX + 'px'});
 		
 	});
