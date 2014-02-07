@@ -66,8 +66,8 @@ h3 {
     margin:0
 }
 
-header, .navbar, footer {
-
+section {
+	background: rgba(255,255,255,0.7);
 }
 
 button.btn.navbar-toggle {
