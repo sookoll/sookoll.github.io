@@ -102,6 +102,14 @@
 					</ul>\
 				</li>';
 	
+	var cit = [
+		"Psst! Don't follow me, I'm a geographer!",
+		"Geography has made us neighbors. (JFK)",
+		"God created war so that Americans would learn geography.(Mark Twain)",
+		"I get to go to overseas places, like Canada. (Britney Spears)",
+		"Everywhere's been where it is ever since it was first put there. It's called geography. (Terry Pratchett)"
+	];
+	
 	// add html to navbar
 	$('.navbar').html(html);
 	$('.navbar a').each(function(){
@@ -159,7 +167,16 @@
 		// Move the background
 		$bgobj.css({ backgroundPosition: coords });
 		scroll = false;
-	}); // window scroll Ends	
+	}); // window scroll Ends
+	
+	var citindex = 0;
+	setInterval(function(){
+		$('.cit span').text(cit[citindex]);
+		if(citindex<=cit.length)
+			cit++;
+		else
+			cit = 0;
+	},5000);
 
 }( window, jQuery ));
 
