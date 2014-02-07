@@ -11,12 +11,12 @@
 							<small>sookoll.ee</small></a>\
 						</li>\
 						<li>\
-							<a href="http://blog.sookoll.ee/tag/portfolio">Projektid\
+							<a href="http://blog.sookoll.ee/tag/portfolio">Portfolio\
 							<br>\
-							<small>Minu käsi on mängus</small></a>\
+							<small>Tehtud tööd</small></a>\
 						</li>\
 						<li>\
-							<a href="http://blog.sookoll.ee">Blog\
+							<a href="http://blog.sookoll.ee">Blogi\
 							<br>\
 							<small>blog.sookoll.ee</small> </a>\
 						</li>\

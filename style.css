@@ -32,9 +32,14 @@ a {
 	color: #39c;
 	font-weight: 400;
 	text-decoration: none;
+	-webkit-transition: color 200ms;
+	-moz-transition: color 200ms;
+	-o-transition: color 200ms;
+	transition: color 200ms;
 }
 
 a:hover {
+	color: #ff8205;
 	text-decoration: none;
 }
 
@@ -50,7 +55,7 @@ a small {
 }
 
 header {
-	border-bottom:40px solid #eee;
+	padding: 40px 0;
 }
 header h1 a {
 	color: #fff;
@@ -65,17 +70,6 @@ header h1 a:hover {
 	text-shadow: 0 0 12px #000;
 }
 
-header span {
-	color: #fff;
-	font-weight: bold;
-	font-size:1em;
-	text-shadow: 0 0 12px #000;
-}
-
-header .container {
-	
-}
-
 h3 {
 	font-weight: bold;
 }
@@ -86,6 +80,19 @@ h3 {
 
 section, footer {
 	background: rgba(255,255,255,0.9);
+}
+
+section .cit {
+	padding: 20px 0;
+	text-align:center;
+	background: #999
+}
+
+section .cit span {
+	color: #fff;
+	font-weight: bold;
+	font-size:1em;
+	text-shadow: 0 0 12px #000;
 }
 
 button.btn.navbar-toggle {
