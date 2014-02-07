@@ -149,8 +149,8 @@
 		var relX = e.pageX - off.left;
 		var relY = e.pageY - off.top;
 		
-		var amountMovedX = (relX * -1 / 10);
-		var amountMovedY = (relY * -1 / 10);
+		var amountMovedX = (relX * -1 / 20);
+		var amountMovedY = (relY * -1 / 20);
 		$(this).find('img').css({'top':amountMovedY + 'px','left':amountMovedX + 'px'});
 		
 	}).mouseout(function(e){
