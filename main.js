@@ -173,9 +173,9 @@
 	setInterval(function(){
 		$('.cit span').text(cit[citindex]);
 		if(citindex<=cit.length)
-			cit++;
+			citindex++;
 		else
-			cit = 0;
+			citindex = 0;
 	},5000);
 
 }( window, jQuery ));
