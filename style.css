@@ -148,9 +148,11 @@ button.btn.navbar-toggle:hover {
 
 footer {
 	padding: 40px 0;
-	text-align:center;
 	background: #999;
 	box-shadow: 0 0 12px #999;
+}
+
+footer span {
 	color: #fff;
 	font-weight: bold;
 	font-size:1em;
