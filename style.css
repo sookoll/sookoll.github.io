@@ -93,7 +93,9 @@ button.btn.navbar-toggle:hover {
 .navbar {
 	max-height: none
 }
-
+.navbar ul {
+	margin:0
+}
 .navbar li {
 	margin-bottom:3px
 }
