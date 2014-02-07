@@ -143,11 +143,18 @@
 	
 	var scroll = false;
 	// parallax
-	$('img.logo').mousemove(function(e){
-		var amountMovedX = (e.pageX * -1 / 10);
-		var amountMovedY = (e.pageY * -1 / 10);
-		$(this).css({'top':amountMovedY + 'px','left':amountMovedX + 'px'});
+	$('.parallax').mousemove(function(e){
+		var off = $(this).offset(); 
+		//or $(this).offset(); if you really just want the current element's offset
+		var relX = e.pageX - off.left;
+		var relY = e.pageY - off.top;
 		
+		var amountMovedX = (relX * -1 / 10);
+		var amountMovedY = (relY * -1 / 10);
+		$(this).find('img').css({'top':amountMovedY + 'px','left':amountMovedX + 'px'});
+		
+	}).mouseout(function(e){
+		$(this).css({'top':0 + 'px','left':0 + 'px'});
 	});
 	
 	// Cache the Window object
