@@ -170,13 +170,16 @@
 	}); // window scroll Ends
 	
 	var citindex = 0;
+	$('.cit span').text(cit[citindex]);
+	citindex++;
+	
 	setInterval(function(){
 		$('.cit span').text(cit[citindex]);
 		if(citindex<=cit.length)
 			citindex++;
 		else
 			citindex = 0;
-	},5000);
+	},15000);
 
 }( window, jQuery ));
 
