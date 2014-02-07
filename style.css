@@ -133,13 +133,17 @@ button.btn.navbar-toggle:hover {
 	font-weight: bold
 }
 
+.content .parallax {
+	position:relative;
+	height:476px;
+	overflow:hidden
+}
+
 .content img.logo {
 	position:relative;
 	top:0;
 	left:0;
 	opacity: .6;
-	display:block;
-	margin 50px;
 }
 
 footer .container {
