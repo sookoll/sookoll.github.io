@@ -176,14 +176,14 @@ footer span {
     position: fixed;
     bottom: 2em;
     right: 10px;
+    width:40px;
+    height:40px;
     text-decoration: none;
-    color: #000000;
-    background-color: rgba(235, 235, 235, 0.80);
-    font-size: 12px;
-    padding: 1em;
+    background: url(compass.png) no-repeat top left;
     display: none;
+    opacity:.8
 }
 
 .back-to-top:hover {    
-    background: url(compass.png) no-repeat top left;
+    opacity:1
 }
