@@ -174,8 +174,8 @@ footer span {
 
 .back-to-top {
     position: fixed;
-    bottom: 2em;
-    right: 10px;
+    bottom: 30px;
+    right: 30px;
     width:40px;
     height:40px;
     text-decoration: none;
